@@ -27,12 +27,20 @@ docker run \
 # Example
 
 ```
-docker run -e AWS_DEFAULT_PROFILE=myprofile -v ~/.aws:/root/.aws -p 9999:5000 ghcr.io/cybergavin/demo-webapp-flask-dynamodb:latest
+docker run \
+ -e AWS_DEFAULT_PROFILE=myprofile \
+ -v ~/.aws:/root/.aws \
+ -p 9999:5000 \
+ ghcr.io/cybergavin/demo-webapp-flask-dynamodb:latest
 ```
 
 Some screenshots of the webapp running after the above command are shown below.
 
 
 <img src="demo-webapp-flask-dynamodb-1.png"  width="600" height="300"><br />
+---
+
 <img src="demo-webapp-flask-dynamodb-2.png"  width="600" height="500"><br />
+---
+
 <img src="demo-webapp-flask-dynamodb-3.png"  width="600" height="400">
